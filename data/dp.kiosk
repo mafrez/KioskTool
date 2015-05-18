@@ -1,0 +1,30 @@
+[Group]
+Icon=applications-system
+Name=DiplomaThesis
+Description=Some simply visible settings
+
+[Action-1]
+Type=action restriction
+Key=shell_access
+Name=Disable access to a command shell
+Description=In an environment where the desktop is dedicated to a defined set of tasks it may be desirable to disable access to a command shell to prevent users from engaging in tasks that were not intended or authorized; hence, it is strongly recommended to disable access to a command shell if the desktop is to act as a public terminal.
+
+[Action-2]
+Type=action restriction
+Key=logout
+Name=Disable logout option
+Description=This prevents the user from logging out. To make this option effective it is important to ensure that key-combinations to terminate the X-server, such as Alt-Ctrl-Backspace, are disabled in the configuration of the X-server.
+
+[Action-3]
+Type=action restriction
+Key=lock_screen
+Name=Disable lock screen option
+Description=When the desktop is to act as a public terminal or is to be shared by different users it may be desirable to prevent locking of the screen to ensure that the system remains accessible if a user leaves the terminal.
+
+[Action-4]
+Type=action restriction
+Key=run_command
+Name=Disable the "Run Command" option (Alt+F2)
+Description=The "Run Command" option can normally be used to execute arbitrary commands; however, when access to a command shell is restricted only applications and services defined by a .desktop file can be started this way. Disabling "Run Command" here hides the option completely.
+
+

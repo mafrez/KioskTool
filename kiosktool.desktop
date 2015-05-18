@@ -1,0 +1,33 @@
+[Desktop Entry]
+Type=Application
+Exec=kiosktool
+Icon=kiosktool
+X-DocPath=kiosktool/index.html
+X-KDE-StartupNotify=true
+
+Name=Kiosk Admin Tool
+Name[bg]=Управление на Kiosk
+Name[ca]=Eina d'administració del Kiosk
+Name[ca@valencia]=Eina d'administració del Kiosk
+Name[cs]=Administrační nástroj Kiosk
+Name[de]=Administrationswerkzeug für Kiosk
+Name[en_GB]=Kiosk Admin Tool
+Name[es]=Herramienta de administración de Kiosk
+Name[et]=Kioski haldur
+Name[ga]=Uirlis Bhainisteoireachta an Kiosk
+Name[gl]=Ferramenta de administración de Kiosk
+Name[hu]=Kiosk adminisztrációs eszköz
+Name[nds]=Pleegwarktüüch för den Kioskbedrief
+Name[nl]=Kiosk-beheerhulpmiddel
+Name[pl]=Narzędzie administracyjne Kiosk
+Name[pt]=Ferramenta de Administração do Quiosque
+Name[pt_BR]=Ferramenta de administração Kiosk
+Name[sv]=Kiosk-administreringsverktyg
+Name[tr]=Kiosk Yönetici Aracı
+Name[ug]=Kiosk باشقۇرۇش قورالى
+Name[uk]=Інструмент адміністрування Kiosk
+Name[x-test]=xxKiosk Admin Toolxx
+
+X-KDE-AuthorizeAction=user/root
+X-DCOP-ServiceType=None
+Categories=Qt;KDE;System;

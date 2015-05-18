@@ -1,0 +1,97 @@
+[Group]
+Icon=applications-system
+Name=General
+Description=Generic restrictions for a KDE session
+
+[Action-1]
+Type=action restriction
+Key=action/kwin_rmb
+Name=Disable Window Manager context menu (Alt-F3)
+Description=The Window Manager context menu is normally shown when Alt-F3 is pressed or when the menu button on the window frame is pressed
+
+[Action-2]
+Type=action restriction
+Key=action/bookmarks
+Name=Disable bookmarks
+Description=Disable Bookmarks in all applications.
+
+[Action-3]
+Type=action restriction
+Key=user/root
+Name=Disable all tasks and applications that require root access
+Description=In multi-user environments the users normally do not know the root password; in such a case, it may be desirable to use this option to remove the tasks and applications from the menus that the users cannot use.
+
+[Action-4]
+Type=action restriction
+Key=shell_access
+Name=Disable access to a command shell
+Description=In an environment where the desktop is dedicated to a defined set of tasks it may be desirable to disable access to a command shell to prevent users from engaging in tasks that were not intended or authorized; hence, it is strongly recommended to disable access to a command shell if the desktop is to act as a public terminal.
+
+[Action-5]
+Type=action restriction
+Key=logout
+Name=Disable logout option
+Description=This prevents the user from logging out. To make this option effective it is important to ensure that key-combinations to terminate the X-server, such as Alt-Ctrl-Backspace, are disabled in the configuration of the X-server.
+
+[Action-6]
+Type=action restriction
+Key=lock_screen
+Name=Disable lock screen option
+Description=When the desktop is to act as a public terminal or is to be shared by different users it may be desirable to prevent locking of the screen to ensure that the system remains accessible if a user leaves the terminal.
+
+[Action-7]
+Type=action restriction
+Key=run_command
+Name=Disable the "Run Command" option (Alt+F2)
+Description=The "Run Command" option can normally be used to execute arbitrary commands; however, when access to a command shell is restricted only applications and services defined by a .desktop file can be started this way. Disabling "Run Command" here hides the option completely.
+
+[Action-8]
+Type=action restriction
+Key=movable_toolbars
+Name=Disable toolbar moving
+Description=Normally toolbars in applications can be moved around; when this option is chosen all toolbars are fixed in their original positions.
+
+[Action-9]
+Type=action restriction
+Key=run_desktop_files
+Name=Disable execution of arbitrary .desktop files
+Description=This option defines whether users may execute .desktop files that are not part of the system-wide desktop icons, KDE menu, registered services or autostart services. When access to a command shell is restricted it is recommended to disable the execution of arbitrary .desktop files as well since such .desktop files can be used to circumvent the command shell restriction.
+
+[Action-10]
+Type=action restriction
+Key=start_new_session
+Name=Disable starting of a second X session
+Description=KDM has the possibility to login a second user in parallel to the current session. Note that this can also be configured as part of the KDM settings in which case the setting here should be left enabled.
+
+[Action-11]
+Type=action restriction
+Key=lineedit_text_completion
+Name=Disable input line history
+Description=If a single account is used by multiple people it may be desirable to disable the input line history out of privacy considerations.
+
+[Action-12]
+Type=action restriction
+Key=skip_drm
+Name=Enforce DRM restrictions
+Description=Some KDE applications can enforce DRM restrictions on content. You may want to enable this if your organisation relies on such restrictions or if local law requires it.
+Version=3.4
+
+[Action-13]
+Type=action restriction
+Key=allow_downloading
+Name=Prevent Downloading
+Description=Some KDE applications can prevent the user from downloading or uploading files.  The normal web browsing experience will not be affected.  Note that you still have to set up the unix file permissions correctly - treat this as merely cosmetic for security.
+Version=3.5
+
+[Action-14]
+Type=config
+Key=widgetStyle
+Group=General
+Name=KDE Widget Style
+Description=Set the system wide widget style to the following style.
+
+[Action-15]
+Type=action restriction
+Key=switch_user
+Name=Disable switching users
+Description=This prevents the user from switch to another account.

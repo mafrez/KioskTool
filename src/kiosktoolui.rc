@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kioskgui" version="3.1">
+<MenuBar>
+ <Menu name="file">
+    <Action name="upload_all"/>
+    <Action name="pkla_convert"/>
+ </Menu>
+ <Menu name="settings">
+    <Action name="filter_uids" />
+    <Action name="filter_gids" />
+ </Menu>
+</MenuBar>
+
+<ToolBar name="mainToolBar" >
+  <text>Main Toolbar</text>
+</ToolBar>
+
+</gui>
+

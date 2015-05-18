@@ -1,0 +1,1 @@
+install( FILES general.kiosk themes.kiosk actions.kiosk DESTINATION ${DATA_INSTALL_DIR}/kiosktool )

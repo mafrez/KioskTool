@@ -1,0 +1,30 @@
+[Group]
+Icon=preferences-system-network
+Description=Group Description
+Name=Group Caption
+
+[Preview]
+Binary=kdesktop
+DBus=kdesktop
+Options=restart
+Args=args
+
+[Setup]
+Binary=kdesktop
+DBus=kdesktop
+Options=restart
+Args=args
+Mutable Files=kdesktoprc,kdeglobals
+Ignore Files=plasmarc
+
+[Action-<actionname>]
+Type=action restriction
+File=some file
+Key=action/kwin_rmb
+Name=Some caption
+Description=Some longer description
+Group=General
+Default=true
+Version=4.2
+
+

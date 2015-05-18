@@ -1,0 +1,18 @@
+This is how a normal installation looks like:
+> mkdir build
+> cd build
+> cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$(kde4-config --prefix) ../
+> make
+> make install
+
+KioskTool also has two extra packager-configurable variables:
+
+DEFAULT_MIN_UID
+DEFAULT_MIN_GID
+
+These serve as defaults for filtering the user and group views by UID and GID.
+Set them to the values your distribution uses for newly created users and groups.
+
+For example:
+> cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$(kde4-config --prefix) -DDEFAULT_MIN_UID=1000 -DEFAULT_MIN_GID=1000 ../
+
